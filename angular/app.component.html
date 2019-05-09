@@ -1,0 +1,18 @@
+<h1>Fibonacci Sequence</h1>
+<p>Enter a number 1-46</p>
+<form [formGroup]="form" (submit)="onSubmit()">
+  <div class="firstRow">
+
+    <input formControlName="iterations">
+
+    <button class="addJurorBtn" color="accent" mat-raised-button type="submit">
+      SUBMIT
+    </button>
+    <div *ngFor="let fibs of fibText">
+      <p>{{fibs}}</p>
+    </div>
+
+  <!-- Submit button -->
+  </div>
+</form>
+<h3></h3>
